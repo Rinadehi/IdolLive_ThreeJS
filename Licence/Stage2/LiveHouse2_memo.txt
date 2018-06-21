@@ -1,0 +1,84 @@
+アイドルマスター２　ライブハウス風ステージ
+
+アイドルマスター２のライブハウスを模したステージです。
+
+■構成
+
+MMDv9_LH2_r/
+      UserFile/　
+            Accessory/
+                  LiveHouse2/
+                        stage2.pmx               ステージ本体
+                        illmine.pmx              イルミネーション
+                        lights_uplight8.pmx      左右のフットライト(8連の)
+                        Floorlight3_EAL_i2.pmx   フロアー回転ライト＋フロアースポットライト
+                        Mlight_EAL_i2_2P.pmx　　 ムービングライト
+                        lights_back.pmx　　　　  背面ライト
+                        lights_seal.pmx　　　　　シーリングライト
+                        lights_st.pmx　　　　　　左右のステージライト
+                        shabon_2P.pmx　　　　　　バブルマシーン
+                        dummy_bone.pmx　　　　　 ダミーボーン
+            MME/
+                  AutoLuminous3/                 発光/ライト各種で使用
+                        AutoLuminous.x
+                  SpotLight/                     光源/ステージとモデルを照らす
+                        SpotLightws.x
+                  CannonParticle/                紙ふぶき
+                        kamifubuki.x
+                  Fog2.5a　　　　　      　　　　霧／ステージ周囲を霞ませる
+                        Fog.x
+            stage.pmm                            ステージ一式のpmm
+            stage+MME.pmm                        stage.pmmにMMEを加えたpmm
+            Go_My_Way_i2.pmm                     stage+MME.pmmにGO MY WAY!用の演出を加えたpmm
+      LiveHouse2_memo.txt　                      このﾌｧｲﾙ
+
+
+
+■準備 / stage.pmm または stage+MME.pmm
+
+①MMD(ver9)の入ったﾌｫﾙﾀﾞｰを新たに用意する。
+②MMDﾌｫﾙﾀﾞｰにMikuMikuEffectを入れる。
+③MMDﾌｫﾙﾀﾞｰにこのステージのUserFileﾌｫﾙﾀﾞｰ以下を入れる。（※MMD_LH2_v92_r以下ではない）
+④MMDを起動し、stage.pmm または stage+MME.pmm を読み込む。
+以上で完了です。ライトや他演出の説明は LiveHouse2_manual.pdf を参照ください。
+
+■準備 / Go_My_Way_i2.pmm
+
+①～③上記の手順と同じです。
+④MMDを起動し、Go_My_Way_i2.pmm を読み込む。
+　正常に読めた場合は、ミク、リン、レンがステージ中央に重なって表示されます。
+⑤対応するモーション(Go My Way!)を各モデルにあてる。
+以上で完了です。
+
+モーションの入手先
+GO MY MAY!!　 http://www.nicovideo.jp/watch/sm4649695  あずP様
+ﾐｸ､ﾘﾝ､ﾚﾝのﾓｰｼｮﾝを85ﾌﾚｰﾑに読み込んでください
+
+■準備 / ステージデータを個別に読み込む場合
+
+UserFile/Accessory/LiveHouse2/ 下の.pmxを、上記「■構成」に載せている
+順番で読み込んでください。
+ライト類を発光させるために MME/AutoLuminous3　が必須です。
+
+
+■データの利用・改造・配布について
+
+自己責任にてお願いいたします。
+モデルの商用利用は禁止です。
+権利者や関係者を不快にさせるような行為はご遠慮ください。
+ステージモデルの改造や配布については自由ですが自己責任でしてください。
+
+同梱のMMEはすべてお借りしているものです。
+扱いは製作者様のreadme/意向にしたがってください。
+AutoLuminous3   　そぼろ様
+SpotLight　　　　 そぼろ様
+CannonParticle　　針金Ｐ様
+Fog2.5a　　　　　 kion様
+
+
+■履歴
+
+2014/10/17 公開 Ver 1.0
+
+tomnc88 2014/10/17
+

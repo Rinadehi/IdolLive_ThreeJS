@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<title>IdolLive_SP</title>
+	<meta charset="utf-8">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<style>
+		body {
+			font-family: Monospace;
+			background-color: rgb(255, 255, 255);
+			color: rgb(0, 0, 0);
+			/* overflow: hidden; */
+		}
+
+		#info {
+			color: #000;
+			position: absolute;
+			top: 10px;
+			width: 100%;
+			text-align: center;
+			display: block;
+		}
+
+		a.bt-samp8 {
+			display: block;
+			height: 35px;
+			width: 120px;
+			text-decoration: none;
+			background: #fdc689;
+			color: #fff;
+			line-height: 37px;
+			text-align: center;
+			border-radius: 3px;
+			box-shadow: 1px 2px 4px #d4842c;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		a.bt-samp8:active {
+			/* クリック時の設定 */
+			-ms-transform: translateY(2px);
+			-webkit-transform: translateY(2px);
+			transform: translateY(2px);
+			box-shadow: none;
+		}
+	</style>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" charset="utf-8">
+		$(function () {
+			var aTags = $('a');
+			aTags.each(function () {
+				var url = $(this).attr('href');
+				$(this).removeAttr('href');
+				$(this).click(function () {
+					location.href = url;
+				});
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<h2>はじめに</h2>
+	<p>2018年2月にアイドルマスター新作として「アイドルマスター シャイニーカラーズ」が発表されました。
+		<br />特徴としてはHTML5によるWebブラウザ上での動作という点で、インストール不要により手軽に始めることができ、なおかつSpineによる2Dアニメーション用ミドルウェアを使いリッチな表現が実現されるそうです。
+		<br />ですが、個人的にはゲーム版アイドルマスターは3DCGによるライブ表現も重要な要素だと思っているので、3DCGによるライブシーンも観たいと感じました。
+		<br />そこで、ブラウザ上による動作という特徴を持ちながら3DCGによるライブシーンの表現はどの程度達成できるのかを試してみることにしました。</p>
+
+	<h2>注意</h2>
+	<p>モデルデータやモーションデータのロードが入ります。また、音楽再生用にYoutube動画の再生を同時に行なっています。データ通信量がかなり大きいのでWi-Fi環境下でお願いします。
+		<br />処理落ちすると物理演算がおかしくなります。注意してください。</p>
+	<div style="text-align:center">
+		<a href="IdolLive_SP_light.html" class="bt-samp8">軽量</a>
+		<p>ステージモデルなし、アセットデータサイズ約8MB
+			<br />ふつうのスマホ向け</p>
+		<a href="IdolLive_SP_middle.html" class="bt-samp8">普通</a>
+		<p>ステージモデルあり、アセットデータサイズ約30MB
+			<br />つよいスマホ向け</p>
+		<a href="IdolLive_SP.html" class="bt-samp8">最高</a>
+		<p>ステージモデルあり、アセットデータサイズ約42MB
+			<br />PC向け</p>
+	</div>
+	<h2>お借りしたものについて</h2>
+	<p>全てのモデルについて、利用規約にてMMD以外での使用、改変、改造は禁止されていないため、ここでの使用に問題はないと考えています。もしなにかあれば連絡ください。
+	</p>
+	<h4>ステージデータ</h4>
+	<p>このモデルはtomnc88氏制作のものをお借りしています。データの改造、配布は自由とのことです。
+		<a href="Licence/Stage2/LiveHouse2_memo.txt">[利用規約]</a>
+	</p>
+	<h4>アイドルマスター1 ライブフォーヴィーナス風モデル</h4>
+	<p>このモデルはくらうち氏制作モデルのtomnc88氏による改造のものをお借りしています。データの改造、配布は衣装部分は自由、頭部分については良識の範囲内となっています。
+		<a href="Licence/Imas1/readme.txt">[利用規約1]</a>
+		<a href="Licence/Imas1/readme(im@s1).txt">[利用規約2]</a>
+	</p>
+	<h4>アイドルマスターOFA レディグリザイユ風モデル</h4>
+	<p>このモデルはくらうち氏制作モデルのtomnc88氏による改造のものをお借りしています。データの改造、配布は衣装部分は自己責任、頭部分については良識の範囲内となっています。
+		<a href="Licence/ImasOFA/readme.txt">[利用規約1]</a>
+		<a href="Licence/ImasOFA/readme(im@s2.1).txt">[利用規約2]</a>
+	</p>
+	<h4>アイドルマスター Ready!! モーション</h4>
+	<p>このモーションはノーザンP氏制作のものをお借りしています。
+		<a href="Licence/Ready!!/モーション位置.txt">[利用規約]</a>
+	</p>
+	 
+</body>
+
+</html>

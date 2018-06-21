@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<title>IdolLive_SP</title>
+	<meta charset="utf-8">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<style>
+		body {
+			font-family: Monospace;
+			background-color: #000;
+			color: #fff;
+			margin: 0px;
+			overflow: hidden;
+			/* pointer-events: none; */
+		}
+	</style>
+	</style>
+</head>
+
+<body>
+	<div id="Stats-output"></div>
+	<script src="build/three.min.js"></script>
+	<script src="js/controls/OrbitControls.js"></script>
+
+	<script src="js/libs/mmdparser.min.js"></script>
+	<script src="js/libs/ammo.js"></script>
+
+	<script src="js/loaders/TGALoader.js"></script>
+	<script src="js/loaders/MMDLoader.js"></script>
+	<script src="js/effects/OutlineEffect.js"></script>
+	<script src="js/animation/CCDIKSolver.js"></script>
+	<script src="js/animation/MMDPhysics.js"></script>
+
+	<script src="js/Detector.js"></script>
+	<script src="js/libs/stats.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+	<script src="js/threex.fullscreen.js"></script>
+	<script src="js/CSS3DRenderer.js"></script>
+
+	<div id="canvas3d" style="position:fixed; top:0px; left:0px; width:100%; height:100%; z-index: 1; background-color: #000000; pointer-events: none;"></div>
+	<canvas id="canvas2d" style="position:fixed; top:0px; left:0px; width:100%; height:100%; z-index: 100; background-color:rgba(0,0,0,0); pointer-events: none;"></canvas>
+	<script>
+		loadStage = true;
+		modelFile = 'models/Imas1L4V/chihaya_L4V.pmx';
+		vmdFiles = ['vmds/READY!!/dance.vmd'];
+		cameraFiles = ['vmds/READY!!/camera.vmd']; 
+	</script>
+	<script src="main.js"></script>
+	<script src="2d.js"></script>
+
+	<div id="player"></div>
+	<script src="https://www.youtube.com/iframe_api"></script>
+	<script src="youtube.js"></script>
+</body>
+
+</html>
